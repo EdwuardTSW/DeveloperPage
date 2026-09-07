@@ -3,12 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Normalize -->
+        <link rel="preload" href="css/normalize.css" as="styles" />
+        <link rel="stylesheet" href="css/normalize.css" />
+
+        <!-- Estilo personalizado -->
+        <link rel="preload" href="css/styles.css" as="styles" />
+        <link rel="stylesheet" href="css/styles.css" />
+
         <title>Developer page</title>
     </head>
 
     <body>
         <header>
-            <h1>Diego Rivera Developer</h1>
+            <h1 class="my-title">Edwuard Chay <span>Developer</span></h1>
         </header>
         <nav>
             <a href="">Inicio</a>
@@ -18,8 +27,7 @@
         </nav>
         <section>
             <h2>Desarrollador full stack</h2>
-            <svg
-            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0" /></svg>
             <p>Mérida, Yucatán</p>
         </section>
 
@@ -54,11 +62,35 @@
 
         <section>
             <h2>Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Llena tus datos de contacto</legend>
+                    <div>
+                        <label>Nombre completo</label>
+                        <input type="text" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="Tu teléfono">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div>
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
         </section>
 
         <footer>
             <p>
-                Todos los derechos reservados ©️. Diego Rivera Developer 2026
+                Todos los derechos reservados ©️. Edwuard Chay - 2026
             </p>
         </footer>
     </body>
