@@ -1,3 +1,11 @@
+:root {
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #26939f;
+    --gris: #757575;    
+}
+
 /* Truco para uniformidad en textos entre navegadores */
 html {
     font-size: 62.5%;
@@ -14,4 +22,40 @@ body {
 
 .my-title span {
     font-size: 2rem;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    background-color: var(--secundario);
+    /* Flexbox define como alinear elementos */
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold; /* Negritas */
+    font-size: 2rem;
+}
+
+/* Cuando pongo el cuersor encima del link */
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+    /* 
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    */
 }
